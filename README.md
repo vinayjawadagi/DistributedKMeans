@@ -4,6 +4,7 @@ This project clusters a yelp dataset of about 150k records of businesses across 
 - Number of reviews normalized with population of the area
 
 This project implements 2 different Parallelizations:
+
 Parallelization 1:
 Execute each round of K Means clustering using parallelization (broadcast the centroids in mapper, and each reduce call takes in one centroid with all points assigned to it), but execute Clustering for different k values sequentially
 -     Implementation:
